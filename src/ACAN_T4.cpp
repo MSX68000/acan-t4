@@ -296,7 +296,7 @@ void ACAN_T4::end (void) {
   mGlobalStatus = 0 ;
 //--- Free transmit buffer
   delete [] mTransmitBuffer ; mTransmitBuffer = nullptr ;
-  delete [] mReceiveBufferFD ; mReceiveBufferFD = nullptr ;
+  delete [] mTransmitBufferFD ; mTransmitBufferFD = nullptr ;
   mTransmitBufferSize = 0 ;
   mTransmitBufferReadIndex = 0 ;
   mTransmitBufferCount = 0 ;
